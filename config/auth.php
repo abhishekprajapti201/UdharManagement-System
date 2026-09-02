@@ -42,6 +42,19 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+        'customer' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+        'staff' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+
     ],
 
     /*
@@ -67,10 +80,18 @@ return [
             'model' => env('AUTH_MODEL', User::class),
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'admins' => [
+            'driver' => 'database',
+            'table' => 'users',
+        ],
+        'customers' => [
+            'driver' => 'database',
+            'table' => 'users',
+        ],
+        'staffs' => [
+            'driver' => 'database',
+            'table' => 'users',
+        ],
     ],
 
     /*
